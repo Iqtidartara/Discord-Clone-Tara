@@ -54,7 +54,6 @@ export const CreateChannelModal = () => {
 
   const isModalOpen = isOpen && type === "createChannel";
   const { channelType } = data;
-  
  
   const form = useForm({
     resolver: zodResolver(formSchema),

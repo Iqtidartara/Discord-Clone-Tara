@@ -3,6 +3,8 @@
 import axios from "axios";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useModal } from "@/hooks/use-modal-store";
+import { Button } from "@/components/ui/button";
 
 import {
   Dialog,
@@ -12,8 +14,6 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { useModal } from "@/hooks/use-modal-store";
-import { Button } from "@/components/ui/button";
 
 export const DeleteServerModal = () => {
   const { isOpen, onClose, type, data } = useModal();
